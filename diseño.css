@@ -19,12 +19,10 @@ h2 {
   margin-top: 30px;
 }
 
-
 img {
   border-radius: 15px;
   margin: 20px 0;
 }
-
 
 p {
   width: 70%;
@@ -59,9 +57,8 @@ th {
   background-color: #f2d9e6;
 }
 
-
 form {
-  width: 40%;
+  width: 90%;
   margin: 20px auto;
   text-align: left;
 }
@@ -69,18 +66,53 @@ form {
 form label {
   font-weight: bold;
 }
+.contenedor-form {
+  background-color: #ffe6f0; 
+  border-radius: 10px;
+  padding: 20px;
+  width: 350px;
+  margin: 20px auto; 
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
 
-button, input[type="submit"] {
-  background-color: #b30059; 
+.contenedor-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #b30059; 
+  font-size: 14px;
+  text-transform: uppercase; 
+  letter-spacing: 0.5px;     
+}
+
+.contenedor-form input,
+.contenedor-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #d9a6c0;  
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+.contenedor-form input[type="submit"] {
+  background-color: #b37397; 
   color: white;
-  border: none; 
-  padding: 10px 20px;
-  border-radius: 10px; 
-  cursor: pointer;
+      
+}
+
+.contenedor-form input:focus,
+.contenedor-form select:focus {
+  border-color: #b30059;      
+  box-shadow: 0 0 5px rgba(179,0,89,0.3);
 }
 
 button:hover, input[type="submit"]:hover {
-  background-color: #800040; 
+   background: #800040;
+  transform: scale(1.05);
+  color: #ffe6f0;
 }
 
 a {
@@ -94,7 +126,7 @@ a:hover {
 }
 
 a:link {
-  color: pink;
+  color: #b30059; ;
 }
 
 a:visited {
@@ -104,4 +136,12 @@ hr {
   border: none;
   border-top: 2px solid #b30059;
   margin: 30px auto;
+}
+.contenedor {
+  background-color: #ffffff; 
+  border-radius: 10px; 
+  padding: 20px; 
+  margin: 30px auto; 
+  width: 70%; 
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.2); 
 }
